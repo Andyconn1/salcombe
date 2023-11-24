@@ -1,0 +1,67 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75vh;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75vh;
+}
+
+#homeCarousel {
+    display: block;
+    max-height: 50vh;
+    max-width: 75vh;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Add more styles as needed */
