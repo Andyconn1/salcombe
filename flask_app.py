@@ -4,10 +4,15 @@ app = Flask(__name__)
 
 # Dummy data for demonstration purposes
 dummy_data = {
-    "host": {
-        "name": "Your Host Name",
-        "phone": "123-456-7890",
-        "email": "host@email.com",
+    "host_1": {
+        "name": "Jane",
+        "phone": "...........",
+        "email": "...........@googlemail.com",
+    },
+    "host_2": {
+        "name": "John",
+        "phone": "...........",
+        "email": "...........@googlemail.com",
     },
     "emergency": {
         "police": "999",
@@ -24,11 +29,11 @@ dummy_data = {
 # Define routes for each section
 @app.route('/')
 def index():
-    return render_template('index.html', host=dummy_data['host'])
+    return render_template('index.html', host_1=dummy_data['host_1'])
 
 @app.route('/welcome')
 def welcome():
-    return render_template('welcome.html', host=dummy_data['host'])
+    return render_template('welcome.html', host_1=dummy_data['host_1'])
 
 @app.route('/emergency')
 def emergency():
